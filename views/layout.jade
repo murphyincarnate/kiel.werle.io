@@ -1,0 +1,18 @@
+// Tells jade to output HTML5 doctype
+
+doctype html5
+html
+	head
+
+		title #{title} - Kiel Werle IOs
+		link(rel='stylesheet', href='/stylesheets/style.css')
+	body
+		header
+			h1 Kiel Werle
+		.container
+			.main-content
+				block content
+			.sidebar
+				block sidebar
+		footer
+			p Running on node with Express, Jade and Stylus
