@@ -37,4 +37,9 @@ app.get('/', function (req, res) {
 	{ title : 'Home' }
 	)
 })
+
+app.get('/', function (req, res) {
+	res.render('gallery'
+	{title : Album})
+})
 app.listen(3000)

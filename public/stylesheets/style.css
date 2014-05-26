@@ -105,63 +105,94 @@ a img {
  */
 body {
   font-family: 'Georgia';
-  background-color: #faf9f0;
-  color: #444;
+  background-color: #adad85;
+  color: #006b00;
 }
 header {
-  font-family: 'Quicksand';
-  padding: 50px 10px;
-  color: #fff;
-  font-size: 25px;
+  font-family: 'Impact';
+  padding: 10%;
+  margin: auto;
+  font-size: 30px;
   text-align: center;
+  background-image: url("/images/banner.jpg");
+  -webkit-background-size: 100%;
+  -moz-background-size: 100%;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-postion: center;
+}
+header h1 {
+  border: 0 solid;
+  -webkit-border-radius: 15%;
+  border-radius: 15%;
+  width: 7%;
+  text-align: center;
+  margin: auto;
+  background-image: url("images/banner.jpg");
+  padding: 1% 1% 1% 1%;
 /*
    * Note the use of the `main-color`
    * variable and the `darken` function
    */
-  background-color: #fa5b4d;
-  border-bottom: 1px solid #df1806;
-  text-shadow: 0px -1px 0px #df1806;
+  background-color: #ffff5c;
+  border-bottom: 1px solid #f3f300;
+  text-shadow: 0px -1px 0px #f3f300;
 }
 .container {
-  width: 500px;
-  margin: 50px auto;
+  width: 90%;
   overflow: hidden;
+  background-image: url("/images/landing.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  -webkit-background-size: 100%;
+  -moz-background-size: 100%;
+  background-size: 100%;
+  padding: 5% 5% 5% 5%;
 }
 .main-content {
-  float: left;
-  width: 300px;
+  float: right;
+  width: 50%;
+  background-color: #ffff5c;
+  padding-left: 3%;
+  padding-right: 10%;
+  padding-top: 1%;
+  padding-bottom: 1%;
+  border: 2px solid;
+  -webkit-border-radius: 2%;
+  border-radius: 2%;
+  opacity: 0.8;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=80)";
+  filter: alpha(opacity=80);
+  overflow: hidden;
 }
 .main-content p {
   margin-bottom: 20px;
 }
 .sidebar {
   float: left;
-  width: 200px;
+  width: 20%;
+  overflow: hidden;
 }
 .sidebar .widget {
-/*
-     * Note the lack of vendor
-     * prefixes here. Nib will
-     * add them for us
-     */
-  -webkit-border-radius: 3px;
-  border-radius: 3px;
-  border: 1px solid #ccc;
-  margin-left: 20px;
-  background-color: #faf9f0;
-  -webkit-box-shadow: inset 0px 0px 0px 3px rgba(255,255,255,0.8), 0px 3px 0px -2px rgba(0,0,0,0.1);
-  box-shadow: inset 0px 0px 0px 3px rgba(255,255,255,0.8), 0px 3px 0px -2px rgba(0,0,0,0.1);
+  us-radius: 3px;
+  border: 1px solid #ffff5c;
+  margin-right: 40%;
+  background-color: #39f;
+  -webkit-box-shadow: inset 0px 0px 0px 3px rgba(173,173,133,0.8), 0px 3px 0px -2px rgba(0,0,0,0.1);
+  box-shadow: inset 0px 0px 0px 3px rgba(173,173,133,0.8), 0px 3px 0px -2px rgba(0,0,0,0.1);
+  opacity: 0.6;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=60)";
+  filter: alpha(opacity=60);
 }
 .sidebar .widget h1 {
-  font-family: 'Quicksand';
-  margin: 13px 10px 4px;
+  font-family: 'Impact';
+  margin: 13px 15px 10px 4px;
   padding-bottom: 10px;
   border-bottom: 1px dotted #ddd;
   -webkit-border-radius: 2px 2px 0px 0px;
   border-radius: 2px 2px 0px 0px;
-  margin-bottom: 10px;
-}
-.sidebar .widget p {
   font-size: 13px;
   padding: 0px 10px;
   margin-bottom: 10px;
@@ -170,9 +201,12 @@ p {
   line-height: 1.8;
 }
 footer {
-  width: 500px;
-  margin: 50px auto;
-  border-top: 1px dotted #ccc;
-  padding-top: 5px;
+  width: 100%;
+  margin: 0% auto;
+  border-top: 1% dotted #fff;
+  padding-top: 1%;
+  padding-bottom: 1%;
   font-size: 13px;
+  text-align: center;
+  background-color: #ffff5c;
 }

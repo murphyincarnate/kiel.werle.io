@@ -17,23 +17,35 @@ global-reset()
  * Store the main color and
  * background color as variables
  */
-main-color = #fa5b4d
-background-color = #faf9f0
+main-color = #FFFF5C
+background-color = #ADAD85
 
 body
   font-family 'Georgia'
   background-color background-color
-  background-image '/images/landing.jpg'
-  background-repeat no-repeat
-  background-position center
-  color #444
+  color #006B00
 
 header
-  font-family 'Quicksand'
-  padding 50px 10px
-  color #fff
-  font-size 25px
+  font-family 'Impact'
+  padding 10%
+  margin auto
+  font-size 30px
   text-align center
+  background-image url("/images/banner.jpg")
+  background-size 100%
+  background-repeat:no-repeat
+  background-attachment:fixed
+  background-postion:center
+
+header h1
+  border 0 solid
+  border-radius 15%
+  width 7%
+  text-align center
+  margin auto
+  background-image url("images/banner.jpg")
+  padding 1% 1% 1% 1%
+
 
   /*
    * Note the use of the `main-color`
@@ -44,43 +56,50 @@ header
   text-shadow 0px -1px 0px darken(main-color, 30%)
 
 .container
-  width 500px
-  margin 50px auto
+  width 90%
   overflow hidden
+  background-image url("/images/landing.jpg")
+  background-repeat:no-repeat;
+  background-attachment:fixed;
+  background-position:center;
+  background-size 100%
+  padding 5% 5% 5% 5%
 
 .main-content
-  float left
-  width 300px
+  float right
+  width 50%
+  background-color main-color 
+  padding-left 3%
+  padding-right 10%
+  padding-top 1%
+  padding-bottom 1%
+  border 2px solid
+  border-radius 2%
+  opacity 0.8
+  overflow hidden
 
   p
     margin-bottom 20px
 
 .sidebar
   float left
-  width 200px
+  width 20%
+  overflow hidden
 
   .widget
-
-    /*
-     * Note the lack of vendor
-     * prefixes here. Nib will
-     * add them for us
-     */
-    border-radius 3px
-    border 1px solid #ccc
-    margin-left 20px
-    background-color background-color
-    box-shadow inset 0px 0px 0px 3px rgba(#fff, 0.8), 0px 3px 0px -2px rgba(#000, 0.1)
+    us-radius 3px
+    border 1px solid main-color
+    margin-right 40%
+    background-color #3399FF
+    box-shadow inset 0px 0px 0px 3px rgba(background-color, 0.8), 0px 3px 0px -2px rgba(#000, 0.1)
+    opacity 0.6
 
     h1
-      font-family 'Quicksand'
-      margin 13px 10px 4px
+      font-family 'Impact'
+      margin 13px 15px 10px 4px
       padding-bottom 10px
       border-bottom 1px dotted #ddd
       border-radius 2px 2px 0px 0px
-      margin-bottom 10px
-
-    p
       font-size 13px
       padding 0px 10px
       margin-bottom 10px
@@ -89,8 +108,11 @@ p
   line-height 1.8
 
 footer
-  width 500px
-  margin 50px auto
-  border-top 1px dotted #ccc
-  padding-top 5px
+  width 100%
+  margin 0% auto
+  border-top 1% dotted #fff
+  padding-top 1%
+  padding-bottom 1%
   font-size 13px
+  text-align center
+  background-color main-color
